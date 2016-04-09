@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-<<<<<<< HEAD
-
   $("submit").on("click", function() {
     var reservation = [];
     $(#name.value).add(reservation);
@@ -43,7 +41,7 @@ $(document).ready(function(){
 //             }
 //           }
 //     });
-=======
+
   // $(".col-md-3").click(function(){
   //     alert("The paragraph was clicked.");
   //   });
@@ -103,4 +101,4 @@ var reservationObj = {};
       // $("#contactdiv").css("display", "block");
     // });
 
->>>>>>> 633b1a2e0fec18cd9f9b5995ad2517fd63a2e4d4
+
