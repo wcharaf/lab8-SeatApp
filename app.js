@@ -16,8 +16,6 @@ $(".col-md-3").click(function(){
 //that takes care of the bonus
 //http://tutorialzine.com/2010/11/jquery-data-method/
 
-var dataobject = {};
-  $(".col-md-3").click(function(){
 
 var reservationObj = {};
 
@@ -52,10 +50,11 @@ var reservationObj = {};
           //   }
           // }
         });
-    $(".col-md-3").on("click", function(){
 
+        
+     
     });
-  });
+
       // alert("The paragraph was clicked.");
       // $("#contactdiv").css("display", "block");
     // });
