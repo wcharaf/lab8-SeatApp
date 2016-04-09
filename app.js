@@ -1,5 +1,49 @@
 $(document).ready(function(){
 
+<<<<<<< HEAD
+
+  $("submit").on("click", function() {
+    var reservation = [];
+    $(#name.value).add(reservation);
+    console.log(reservation);
+  });
+
+});
+
+
+// var dataobject = {};
+//   $(".col-md-3").click(function(){
+//     // function popup() {
+//     //     $("#contactdiv").css("display", "block");
+//     //     }
+//         $("#cancel").click(function() {
+//           $(this).parent().parent().hide();
+//         });
+//         $("#submit").click(function() {
+//           var name = $("#name").val();
+//           var email = $("#email").val();
+//           var contact = $("#contactno").val();
+//           if (name == "" || email == "" || contactno == ""){
+//             alert("Please Fill All Fields");
+//           }else {
+//             if (validateEmail(email)) {
+//               $("#contactdiv").css("display", "none");
+//             }else {
+//               alert('Invalid Email Address');
+//             };
+
+
+//             function validateEmail(email) {
+//               var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+//               if (filter.test(email)) {
+//                 return true;
+//               }else {
+//                 return false;
+//               }
+//             }
+//           }
+//     });
+=======
   // $(".col-md-3").click(function(){
   //     alert("The paragraph was clicked.");
   //   });
@@ -59,3 +103,4 @@ var reservationObj = {};
       // $("#contactdiv").css("display", "block");
     // });
 
+>>>>>>> 633b1a2e0fec18cd9f9b5995ad2517fd63a2e4d4
