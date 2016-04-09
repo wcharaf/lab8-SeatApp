@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>lab8-SeatAppgit</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/remodal.css">
+	<link rel="stylesheet" href="dist/remodal-default-theme.css">
     <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -13,6 +15,10 @@
   <h1>SEAT RESERVATION APP</h1>
   <p>Welcome to the Grand Circus Seat Reservation App! <span id="important">Please click on the seat(s) that you would like.</span>  You will be directed to a form where you can enter contact information for the seat you reserve.  We hope that your experience in our seats is an enjoyable one.  Please contact 313-690-1622 for any issues with reservations.</p>
   </div>
+<!-- for the modal -->
+ <!--  <div class="remodal-bg">
+...Page content...
+</div> -->
 
   <div class="row">
     <div class="col-md-3" id="Seat1">Seat 1</div>
@@ -56,6 +62,24 @@
     <div class="col-md-3" id="Seat24">Seat 24</div>
   </div>
 </div>
+<!--plug in -->
+<div class="remodal-bg">
+
+	<div class="remodal" data-remodal-id="modal">
+	  <button data-remodal-action="close" class="remodal-close"></button>
+	  <h1>Remodal</h1>
+	  <p>
+	    FORM will go HERE
+	  </p>
+	  <br>
+	  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+	  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+	</div>
+
+	<a href="#modal">Call the modal with data-remodal-id="modal"</a>
+</div>
+
+<!--form-->
 
   <div id="contactdiv">
 
@@ -81,8 +105,10 @@
   </form>
 
 </div>
-
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	
+  <script src="dist/remodal.min.js"></script>
+  <script src="libs/jquery-loader.js"></script>
+  <script src="libs/jquery.js"></script>
   <script type="text/javascript" src = "app.js"> </script>
 
 </body>
