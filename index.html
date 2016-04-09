@@ -20,46 +20,47 @@
 ...Page content...
 </div> -->
 
+<!-- each div has been wrapped in the link calling class modal, when you click, the form pops up-->
   <div class="row">
-    <div class="col-md-3" id="Seat1">Seat 1</div>
-    <div class="col-md-3" id="Seat2">Seat 2</div>
-    <div class="col-md-3" id="Seat3">Seat 3</div>
-    <div class="col-md-3" id="Seat4">Seat 4</div>
+    <a href="#modal"><div class="col-md-3" id="Seat1">Seat 1</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat2">Seat 2</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat3">Seat 3</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat4">Seat 4</div></a>
   </div>
 
   <div class="row">
-    <div class="col-md-3" id="Seat5">Seat 5</div>
-    <div class="col-md-3" id="Seat6">Seat 6</div>
-    <div class="col-md-3" id="Seat7">Seat 7</div>
-    <div class="col-md-3" id="Seat8">Seat 8</div>
+     <a href="#modal"><div class="col-md-3" id="Seat5">Seat 5</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat6">Seat 6</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat7">Seat 7</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat8">Seat 8</div></a>
   </div>
 
   <div class="row">
-    <div class="col-md-3" id="Seat9">Seat 9</div>
-    <div class="col-md-3" id="Seat10">Seat 10</div>
-    <div class="col-md-3" id="Seat11">Seat 11</div>
-    <div class="col-md-3" id="Seat12">Seat 12</div>
+     <a href="#modal"><div class="col-md-3" id="Seat9">Seat 9</div></a>
+    <a href="#modal"> <div class="col-md-3" id="Seat10">Seat 10</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat11">Seat 11</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat12">Seat 12</div></a>
   </div>
 
   <div class="row">
-    <div class="col-md-3" id="Seat13">Seat 13</div>
-    <div class="col-md-3" id="Seat14">Seat 14</div>
-    <div class="col-md-3" id="Seat15">Seat 15</div>
-    <div class="col-md-3" id="Seat16">Seat 16</div>
+     <a href="#modal"><div class="col-md-3" id="Seat13">Seat 13</div></a>
+    <a href="#modal"> <div class="col-md-3" id="Seat14">Seat 14</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat15">Seat 15</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat16">Seat 16</div></a>
   </div>
 
   <div class="row">
-    <div class="col-md-3" id="Seat17">Seat 17</div>
-    <div class="col-md-3" id="Seat18">Seat 18</div>
-    <div class="col-md-3" id="Seat19">Seat 19</div>
-    <div class="col-md-3" id="Seat20">Seat 20</div>
+     <a href="#modal"><div class="col-md-3" id="Seat17">Seat 17</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat18">Seat 18</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat19">Seat 19</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat20">Seat 20</div></a>
   </div>
 
   <div class="row">
-    <div class="col-md-3" id="Seat21">Seat 21</div>
-    <div class="col-md-3" id="Seat22">Seat 22</div>
-    <div class="col-md-3" id="Seat23">Seat 23</div>
-    <div class="col-md-3" id="Seat24">Seat 24</div>
+     <a href="#modal"><div class="col-md-3" id="Seat21">Seat 21</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat22">Seat 22</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat23">Seat 23</div></a>
+     <a href="#modal"><div class="col-md-3" id="Seat24">Seat 24</div></a>
   </div>
 </div>
 <!--plug in -->
@@ -69,48 +70,45 @@
 	  <button data-remodal-action="close" class="remodal-close"></button>
 	  <h1>Remodal</h1>
 	  <p>
-	    FORM will go HERE
+	  	<!--form-->
+	      <form>
+		    <div class="form-group">
+		      <label for="name">NAME</label>
+		      <input type="text" class="form-control" id="name" placeholder="NAME">
+		    </div>
+
+		    <div class="form-group">
+		      <label for="email">Email</label>
+		      <input type="text" class="form-control" id="email" placeholder="Email">
+		    </div>
+
+		    <div class="form-group">
+		      <label for="contactno">Contact Number</label>
+		      <input type="text" class="form-control" id="contactno" placeholder="Contact Number">
+		    </div>
+<!-- we need to get rid of this button -->
+		    <button type="submit" class="btn btn-default" id="submit">Submit
+		    </button>
+
+		  </form>
 	  </p>
 	  <br>
 	  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
 	  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
 	</div>
 
-	<a href="#modal">Call the modal with data-remodal-id="modal"</a>
 </div>
 
-<!--form-->
 
   <div id="contactdiv">
 
-  <form>
-    <div class="form-group">
-      <label for="name">NAME</label>
-      <input type="text" class="form-control" id="name" placeholder="NAME">
-    </div>
 
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="text" class="form-control" id="email" placeholder="Email">
-    </div>
 
-    <div class="form-group">
-      <label for="contactno">Contact Number</label>
-      <input type="text" class="form-control" id="contactno" placeholder="Contact Number">
-    </div>
-
-    <button type="submit" class="btn btn-default" id="submit">Submit
-    </button>
-
-  </form>
-<p>Cara was here! Weee!</p>
-<p>Cara was here again!</p>
-<p>Cara was here again again!</p>
 </div>
 	
+  <script src="libs/jquery.js"></script>	
   <script src="dist/remodal.min.js"></script>
   <script src="libs/jquery-loader.js"></script>
-  <script src="libs/jquery.js"></script>
   <script type="text/javascript" src = "app.js"> </script>
 
 </body>
