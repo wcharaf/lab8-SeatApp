@@ -1,9 +1,12 @@
 $(document).ready(function(){ // JavaScript-y things here
 
-  $(".col-md-3").click(function(){
-      alert("The paragraph was clicked.");
+  // $(".col-md-3").click(function(){
+  //     alert("The paragraph was clicked.");
+  //   });
+$(".col-md-3").click(function(){
+      $(this).css("background-color", "black");
+      $(this).css("color", "white");
     });
-
 
 });
 //using the $(<>).data("{object:object, object: object}")

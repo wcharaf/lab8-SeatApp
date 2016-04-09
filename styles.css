@@ -10,11 +10,9 @@ p {
   width: 20%;
   text-align: center;
 }
-* {
-  border-class: inherit;
-}
 .row {
-  margin: auto;
+  text-align: center;
+  margin: 0 auto;
 }
 #important {
   color: #f00;
