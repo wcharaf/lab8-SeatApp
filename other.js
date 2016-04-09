@@ -1,4 +1,4 @@
-Wissam is cool 
+Cara is cool, too! Wissam is cool 
 //super nova!!!
 //more comments for aleah//
 
