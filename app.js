@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
-var dataobject = {};
+var reservationObj = [];
+	
+	
+
+
   $(".col-md-3").click(function(){
     // function popup() {
     //     $("#contactdiv").css("display", "block");
@@ -8,11 +12,13 @@ var dataobject = {};
         $("#cancel").click(function() {
           $(this).parent().parent().hide();
         });
+        
         $("#submit").click(function() {
           var name = $("#name").val();
           var email = $("#email").val();
           var contact = $("#contactno").val();
-          if (name == "" || email == "" || contactno == ""){
+         
+          if (name === "" || email === "" || contactno === ""){
             alert("Please Fill All Fields");
           }else {
             if (validateEmail(email)) {
