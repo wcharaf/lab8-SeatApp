@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var reservationObj = {};
+// var reservationObj = {};
 
     // function popup() {
     //     $("#contactdiv").css("display", "block");
@@ -9,9 +9,9 @@ var reservationObj = {};
         //   $(this).parent().parent().hide();
         // });
         $("#submit").on("click",function() {
-          var name = $("#name").value;
-          var email = $("#email").value;
-          var contact = $("#contactno").value;
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var contact = $("#contactno").val();
           console.log(name+email+contact);
           // if (name === "" || email === "" || contactno === ""){
           //   alert("Please Fill All Fields");
@@ -32,9 +32,9 @@ var reservationObj = {};
           //   }
           // }
         });
-    $(".col-md-3").on("click", function(){
+    // $(".col-md-3").on("click", function(){
 
-    });
+    // });
   });
       // alert("The paragraph was clicked.");
       // $("#contactdiv").css("display", "block");
