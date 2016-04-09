@@ -3,12 +3,11 @@ $(document).ready(function(){
   // $(".col-md-3").click(function(){
   //     alert("The paragraph was clicked.");
   //   });
-$(".col-md-3").click(function(){
+  $(".col-md-3").click(function(){
       $(this).css("background-color", "black");
       $(this).css("color", "white");
     });
 
-});
 //using the $(<>).data("{object:object, object: object}")
 //also use getData to bring data from the form and displa as an object with key value pairs
 //in a var= {}
@@ -17,7 +16,7 @@ $(".col-md-3").click(function(){
 //http://tutorialzine.com/2010/11/jquery-data-method/
 
 
-var reservationObj = {};
+  var reservationObj = {};
 
 
     // function popup() {
@@ -27,9 +26,9 @@ var reservationObj = {};
         //   $(this).parent().parent().hide();
         // });
         $("#submit").on("click",function() {
-          var name = $("#name").value;
-          var email = $("#email").value;
-          var contact = $("#contactno").value;
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var contact = $("#contactno").val();
           console.log(name+email+contact);
           // if (name === "" || email === "" || contactno === ""){
           //   alert("Please Fill All Fields");
@@ -51,11 +50,10 @@ var reservationObj = {};
           // }
         });
 
-        
-     
+
+
     });
 
       // alert("The paragraph was clicked.");
       // $("#contactdiv").css("display", "block");
     // });
-
