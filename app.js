@@ -1,7 +1,10 @@
 $(document).ready(function(){ // JavaScript-y things here
 
-  $(".col-md-3").click(function(){
-      alert("The paragraph was clicked.");
+	var reservation = {};
+
+  $(".col-md-3").on("click", function() {
+  	
+
     });
 
 
